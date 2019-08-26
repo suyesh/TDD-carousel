@@ -36,7 +36,7 @@ describe('CarouselSlide', () => {
     const attribution = 'Trevor Burnham';
     wrapper.setProps({ description, attribution });
     expect(wrapper.find('figcaption').text()).toBe(
-      `${ description } ${ attribution }`
+      `${description} ${attribution}`
     );
     expect(wrapper.find('figcaption strong').text()).toBe(description);
   });

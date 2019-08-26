@@ -1,8 +1,8 @@
-import React from "react";
-import CarouselButton from "./components/CarouselButton";
+import React from 'react';
+import CarouselButton from './components/CarouselButton';
 
 function App() {
-	return <CarouselButton />;
+  return <CarouselButton />;
 }
 
 export default App;
