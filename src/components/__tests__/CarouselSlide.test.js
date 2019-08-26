@@ -6,7 +6,13 @@ describe('CarouselSlide', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<CarouselSlide imgUrl="default" description="default" attribution="default" />);
+    wrapper = shallow(
+      <CarouselSlide
+        imgUrl="default"
+        description="default"
+        attribution="default"
+      />
+    );
   });
 
   it('renders a <figure/>', () => {
@@ -29,7 +35,9 @@ describe('CarouselSlide', () => {
     const description = 'A jaw droppingly spectacular image';
     const attribution = 'Trevor Burnham';
     wrapper.setProps({ description, attribution });
-    expect(wrapper.find('figcaption').text()).toBe(`${description} ${attribution}`);
+    expect(wrapper.find('figcaption').text()).toBe(
+      `${ description } ${ attribution }`
+    );
     expect(wrapper.find('figcaption strong').text()).toBe(description);
   });
 });
