@@ -1,20 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-let apple = 'orange';
 const CarouselSlide = props => (
   <figure>
-    <img src={props.imgUrl} />
+    <img src={props.imgUrl} alt={props.description} />
     <figcaption>
       <strong>{props.description}</strong> {props.attribution}
     </figcaption>
   </figure>
 );
 
-// CarouselSlide.propTypes = {
-//   imgUrl: PropTypes.string.isRequired,
-//   description: PropTypes.string.isRequired,
-//   attribution: PropTypes.string.isRequired
-// };
+CarouselSlide.propTypes = {
+  imgUrl: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  attribution: PropTypes.string.isRequired
+};
 
 export default CarouselSlide;
