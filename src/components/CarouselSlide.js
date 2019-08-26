@@ -10,10 +10,10 @@ const CarouselSlide = props => (
   </figure>
 );
 
-CarouselSlide.propTypes = {
-  imgUrl: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  attribution: PropTypes.string.isRequired
-};
+// CarouselSlide.propTypes = {
+//   imgUrl: PropTypes.string.isRequired,
+//   description: PropTypes.string.isRequired,
+//   attribution: PropTypes.string.isRequired
+// };
 
 export default CarouselSlide;
