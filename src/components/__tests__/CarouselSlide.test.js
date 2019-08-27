@@ -39,4 +39,14 @@ describe('CarouselSlide', () => {
     );
     expect(wrapper.find('figcaption strong').text()).toBe(description);
   });
+
+  it('passes other props through to <figure></figure>', () => {
+    const style = {};
+    const onClick = () => {};
+    const className = 'my-carousel-slide';
+    wrapper.setProps({ style, onClick, className });
+    expect(wrapper.prop('style')).toBe(style);
+    expect(wrapper.prop('onClick')).toBe(onClick);
+    expect(wrapper.prop('className')).toBe(className);
+  });
 });
