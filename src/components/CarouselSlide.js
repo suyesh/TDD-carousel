@@ -10,10 +10,14 @@ const CarouselSlide = ({ imgUrl, description, attribution }) => (
   </figure>
 );
 
+CarouselSlide.defaultProps = {
+  attribution: 'attribution'
+};
+
 CarouselSlide.propTypes = {
   imgUrl: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  attribution: PropTypes.string.isRequired
+  description: PropTypes.node.isRequired,
+  attribution: PropTypes.node
 };
 
 export default CarouselSlide;

@@ -8,9 +8,8 @@ describe('CarouselSlide', () => {
   beforeEach(() => {
     wrapper = shallow(
       <CarouselSlide
-        imgUrl="default"
+        imgUrl="https://example.com/default,jpg"
         description="default"
-        attribution="default"
       />
     );
   });
