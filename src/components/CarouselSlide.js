@@ -30,13 +30,19 @@ const CarouselSlide = ({
 };
 
 CarouselSlide.defaultProps = {
-  attribution: 'attribution'
+  attribution: 'attribution',
+  style: {},
+  className: '',
+  onClick: () => {}
 };
 
 CarouselSlide.propTypes = {
   imgUrl: PropTypes.string.isRequired,
   description: PropTypes.node.isRequired,
-  attribution: PropTypes.node
+  attribution: PropTypes.node,
+  style: PropTypes.objectOf(PropTypes.object),
+  className: PropTypes.string,
+  onClick: PropTypes.func
 };
 
 export default CarouselSlide;

@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CarouselSlide passes \`imgUrl\` through to the <img> 1`] = `
+<figure
+  className=""
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="presentation"
+  style={Object {}}
+>
+  <img
+    alt="default"
+    src="https://example.com/image.png"
+  />
+  <figcaption>
+    <strong>
+      default
+    </strong>
+     
+    attribution
+  </figcaption>
+</figure>
+`;
+
+exports[`CarouselSlide passes other props through to <figure></figure> 1`] = `
+<figure
+  className="my-carousel-slide"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="presentation"
+  style={Object {}}
+>
+  <img
+    alt="default"
+    src="https://example.com/default,jpg"
+  />
+  <figcaption>
+    <strong>
+      default
+    </strong>
+     
+    attribution
+  </figcaption>
+</figure>
+`;
+
+exports[`CarouselSlide renders a <figure/> 1`] = `
+<figure
+  className=""
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="presentation"
+  style={Object {}}
+>
+  <img
+    alt="default"
+    src="https://example.com/default,jpg"
+  />
+  <figcaption>
+    <strong>
+      default
+    </strong>
+     
+    attribution
+  </figcaption>
+</figure>
+`;
+
+exports[`CarouselSlide renders an <img> and a <figcaption> as children 1`] = `
+<figure
+  className=""
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="presentation"
+  style={Object {}}
+>
+  <img
+    alt="default"
+    src="https://example.com/default,jpg"
+  />
+  <figcaption>
+    <strong>
+      default
+    </strong>
+     
+    attribution
+  </figcaption>
+</figure>
+`;
+
+exports[`CarouselSlide uses \`description\` and \`attribution\` as the <figcaption></figcaption> 1`] = `
+<figure
+  className=""
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="presentation"
+  style={Object {}}
+>
+  <img
+    alt="A jaw droppingly spectacular image"
+    src="https://example.com/default,jpg"
+  />
+  <figcaption>
+    <strong>
+      A jaw droppingly spectacular image
+    </strong>
+     
+    Trevor Burnham
+  </figcaption>
+</figure>
+`;
