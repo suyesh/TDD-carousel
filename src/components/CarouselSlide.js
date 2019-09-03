@@ -29,13 +29,6 @@ const CarouselSlide = ({
   );
 };
 
-CarouselSlide.defaultProps = {
-  attribution: 'attribution',
-  style: {},
-  className: '',
-  onClick: () => {}
-};
-
 CarouselSlide.propTypes = {
   imgUrl: PropTypes.string.isRequired,
   description: PropTypes.node.isRequired,

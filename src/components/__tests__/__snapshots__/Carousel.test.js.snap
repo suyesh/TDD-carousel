@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousel increments \`slideIndex\` when Next is clicked 1`] = `
+<div>
+  <CarouselButton
+    data-action="prev"
+    onClick={[Function]}
+  >
+    Prev
+  </CarouselButton>
+  <CarouselButton
+    data-action="next"
+    onClick={[Function]}
+  >
+    Next
+  </CarouselButton>
+</div>
+`;
+
+exports[`Carousel renders the current slide as a CarouselSlide 1`] = `
+<div>
+  <CarouselSlide
+    attribution="Dos Equis"
+    description="Slide 2"
+    imgUrl="https://example.com/slide2.png"
+  />
+  <CarouselButton
+    data-action="prev"
+    onClick={[Function]}
+  >
+    Prev
+  </CarouselButton>
+  <CarouselButton
+    data-action="next"
+    onClick={[Function]}
+  >
+    Next
+  </CarouselButton>
+</div>
+`;

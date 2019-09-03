@@ -1,26 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CarouselButton passes \`children\` through to the <button/> 1`] = `
-<button
-  type="button"
->
-  Button text
-</button>
-`;
-
 exports[`CarouselButton passes other props through to the <button/> 1`] = `
 <button
   className="my-carousel-button"
   data-action="prev"
   onClick={[Function]}
-  type="button"
->
-  Button text
-</button>
-`;
-
-exports[`CarouselButton renders a <button/> 1`] = `
-<button
   type="button"
 >
   Button text

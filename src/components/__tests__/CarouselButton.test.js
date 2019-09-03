@@ -10,14 +10,16 @@ describe('CarouselButton', () => {
     wrapper = shallow(<CarouselButton>{text}</CarouselButton>);
   });
 
+  afterAll(() => {
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it('renders a <button/>', () => {
     expect(wrapper.type()).toBe('button');
-    expect(wrapper).toMatchSnapshot();
   });
 
   it('passes `children` through to the <button/>', () => {
     expect(wrapper.prop('children')).toBe(text);
-    expect(wrapper).toMatchSnapshot();
   });
 
   it('passes other props through to the <button/>', () => {
@@ -29,6 +31,5 @@ describe('CarouselButton', () => {
     expect(wrapper.prop('onClick')).toBe(onClick);
     expect(wrapper.prop('className')).toBe(className);
     expect(wrapper.prop('data-action')).toBe(dataAction);
-    expect(wrapper).toMatchSnapshot();
   });
 });
