@@ -51,8 +51,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && cross-env CI=true npm test",
-      "pre-push": "npm run lint && cross-env CI=true npm test"
+      "pre-commit": "npm run lint && cross-env CI=true npm test"
     }
   },
   "jest": {
